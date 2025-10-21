@@ -1,0 +1,9 @@
+## Project overview & goals
+
+Goal: Build a small app that accepts background tasks over HTTP, enqueues them via Celery (using Redis as broker & backend), executes them in workers, and exposes status+results.
+
+Minimal feature set:
+- Submit a job (e.g., process text, simulate heavy job)
+- Get task ID immediately
+- Poll task status and result via API
+- Run everything with docker-compose (Redis, web, worker)
